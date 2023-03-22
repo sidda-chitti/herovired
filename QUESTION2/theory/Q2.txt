@@ -1,0 +1,44 @@
+Create an EC2 intance for a Reactjs application and deploy the application and provide the public ip for it, also enable the cloud monitoriing on this estances.
+
+--------------------------------------------------------------------------------------
+
+STEP1: first we have to create the ec2 instance
+
+STEP2: connect the ec2 instance and do the following commands
+ 
+sudo apt-get update
+
+sudo apt-get upgrade
+
+sudo apt-get install nginx -y
+
+nginx -v
+
+sudo systemctl restart nginx
+
+sudo apt-get install curl
+
+curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+
+sudo apt-get install -y nodejs
+
+npx create-react-app react-tutorial
+
+cd react-tutorial
+
+npm run build
+
+npm start
+
+
+STEP3: go to ec2 security and edit inbound rules
+
+       custom tcp and anywhere --- port range 3000
+
+STEP4: copy the publicIP with given port
+
+       now we can see the output
+
+STEP5: create dashboard in cloudwatch and add to the instance in which we 
+
+       deploy the reactjs application to moniter the instance

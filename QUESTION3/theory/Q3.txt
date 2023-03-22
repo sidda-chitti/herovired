@@ -1,0 +1,17 @@
+STEP1: create database in rds service
+STEP2: create ubuntu instance 
+STEP3: connect database to the instance
+STEP4: connect the ubuntu server and give the following commands
+
+sudo su
+sudo apt update
+sudo apt-get install mysql-client
+mqsql -h endpoint -u username -p
+CREARE DATABASE database name;
+USE databasename
+CREATE TABLE tablename(id INT NOT NULL AUTO_INCREMENT, NAME VARCHAR(50), BRANCH VARCHAR(20), PRIMARY KEY(id));
+INSERT INTO tablename (NAME,BRANCH) VALUES("CHITTI","ECE"),("PRASANNA","CSE");
+SELECT* FROM tablename
+ 
+by using this commands we can create table in instance 
+     

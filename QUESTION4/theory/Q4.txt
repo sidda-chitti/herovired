@@ -1,0 +1,17 @@
+S3: simple storage service
+It is a storage based service used to store the files or data
+It contains Buckets which are like folders/files
+
+---------------------------------------------------------------
+
+Create an S3 bucket and deploy the reactjs static application on it 
+and provide with the public url for use
+
+
+
+STEP1: first we have to create the bucket with public access
+STEP2: upload the files related to the reactjs application
+       in the created bucket
+STEP3: make the objects public
+STEP4: enable the static webhosting and specify the index.html and error.html
+STEP5: copy the static webhosting url and we can see the output
